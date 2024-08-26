@@ -1,0 +1,44 @@
+.menuInfo {
+	list-style: none;
+	padding-top: 20px;
+	font-size: 18px
+}
+
+.menuInfo li {
+	line-height: 40px;
+	padding-top: 10px;
+}
+/* Hiệu ứng mờ dần cho modal */
+.fade {
+	transition: opacity 0.15s linear;
+}
+
+/* Hiệu ứng slide từ dưới lên cho modal */
+.modal-slide-in-bottom {
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+.btn-close {
+	transition: transform 0.3s ease, color 0.3s ease;
+	/* Thêm transition để tạo hiệu ứng mượt khi xoay và thay đổi màu */
+	color: black; /* Màu sắc ban đầu */
+}
+
+.btn-close:hover {
+	transform: rotate(-90deg) scale(1.2);
+	/* Xoay nút 90 độ và scale lớn hơn 0.2 lần khi hover */
+	color: red; /* Thay đổi màu sắc thành đỏ khi hover */
+}
+
+
+
